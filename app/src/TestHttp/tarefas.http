@@ -1,0 +1,30 @@
+@baseUrl = https://8080-igorgalvao1-exercicioap-l0amf2h283p.ws-us115.gitpod.io/
+
+###
+
+GET {{baseUrl}}/tarefas
+
+###
+
+POST {{baseUrl}}/tarefas
+Content-Type: application/json
+
+{
+    "descricao": "Igor Galvão",
+    "concluido": false
+}
+
+###
+GET {{baseUrl}}/tarefas/2
+
+###
+PUT {{baseUrl}}/tarefas/1
+Content-Type: application/json
+
+{
+    "descricao": "Descrição de teste",
+    "concluido": true
+}
+
+###
+DELETE {{baseUrl}}/tarefas/2
